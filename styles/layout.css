@@ -1,0 +1,528 @@
+html {
+    overflow-y: scroll;
+}
+
+
+/**
+ * Forces a scrollbar when the viewport is larger than the websites content -
+ * CSS3
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #919191;
+    /*background-color : #232323;*/
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 13px;
+    background: url("../images/bg3.jpg")center center;
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    line-height: 0;
+}
+
+.clear {
+    display: block;
+    clear: both;
+}
+
+html[xmlns] .clear {
+    display: block;
+}
+
+* html .clear {
+    height: 1%;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+code {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.fl_left {
+    float: left;
+}
+
+.fl_right {
+    float: right;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.imgholder,
+.imgl,
+.imgr {
+    padding: 4px;
+    border: 1px solid #D6D6D6;
+    text-align: center;
+}
+
+.imgl {
+    float: left;
+    clear: left;
+    margin: 0 15px 15px 0;
+}
+
+.imgr {
+    float: right;
+    clear: right;
+    margin: 0 0 15px 15px;
+}
+
+
+/**
+ * ----------------------------------------------HTML 5
+ * Overrides-------------------------------------
+ */
+
+address,
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+q {
+    display: block;
+    padding: 0 10px 8px 10px;
+    color: #979797;
+    background-color: #ECECEC;
+    font-style: italic;
+    line-height: normal;
+}
+
+q:before {
+    content: '� ';
+    font-size: 26px;
+}
+
+q:after {
+    content: ' �';
+    font-size: 26px;
+    line-height: 0;
+}
+
+
+/* ----------------------------------------------Wrapper------------------------------------- */
+
+div.wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.row1 {
+    /*    color: #C0BAB6;*/
+    background-color: rgba(109, 109, 109, 0.4);
+    border-radius: 0 0 40px 40px;
+    font-family: 'Julius Sans One', 'Sahitya', serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.row2 {
+    color: #f4f4f4;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /*    background-color: rgba(109, 109, 109, 0.1);*/
+}
+
+.row2 a {
+    color: #FF9900;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /*    background-color: #FFFFFF;*/
+}
+
+.row3 {
+    color: #f4f4f4;
+    
+    background-color: rgba(109, 109, 109, 0.3);
+    border-radius: 40px 40px 0 0;
+}
+
+.row3 a {
+    color: #FF9900;
+    /*    background-color: #333333;*/
+}
+
+.row4,
+.row4 a {
+    color: #919191;
+    background-color: #232323;
+}
+
+
+/* ----------------------------------------------Generalise------------------------------------- */
+
+#container,
+#copyright,
+#footer,
+#header {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Sahitya', 'Julius Sans One', Georgia, 'Dancing Script', cursive;
+    font-size: 18px;
+    width: 800px;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: normal;
+}
+
+address {
+    font-style: normal;
+}
+
+blockquote,
+q {
+    display: block;
+    padding: 8px 10px;
+    color: #979797;
+    background-color: #ECECEC;
+    font-style: italic;
+    line-height: normal;
+}
+
+blockquote:before,
+q:before {
+    content: '� ';
+    font-size: 26px;
+}
+
+blockquote:after,
+q:after {
+    content: ' �';
+    font-size: 26px;
+    line-height: 0;
+}
+
+fieldset,
+form,
+legend {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+legend {
+    display: none;
+}
+
+input,
+select,
+textarea {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
+}
+
+.four_quarter,
+.one_quarter,
+.three_quarter,
+.two_quarter {
+    display: block;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.one_quarter {
+    width: 225px;
+}
+
+.two_quarter {
+    width: 470px;
+}
+
+.three_quarter {
+    width: 715px;
+}
+
+.four_quarter {
+    width: 960px;
+    float: none;
+    clear: both;
+    margin-right: 0;
+}
+
+.one_third,
+.three_third,
+.two_third {
+    display: block;
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+.one_third {
+    width: 300px;
+}
+
+.two_third {
+    width: 630px;
+}
+
+.three_third {
+    width: 960px;
+    float: none;
+    clear: both;
+    margin-right: 0;
+}
+
+.lastbox {
+    margin-right: 0;
+}
+
+
+/* ----------------------------------------------Header------------------------------------- */
+
+#header {
+    padding: 5px 0px 5px 0px;
+    width: 1100px;
+}
+
+#header #hgroup {
+    float: left;
+    /*margin : 0 0 20px 0;*/
+}
+
+#header #hgroup #logo {
+    border-radius: 50%;
+}
+
+#header #hgroup span {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Monoton';
+    font-size: 16px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: black;
+}
+
+#header #hgroup h1,
+#header #hgroup h2 {
+    text-transform: none;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#header #hgroup h1 {
+    font-size: 36px;
+}
+
+#header #hgroup h2 {
+    font-size: 13px;
+}
+
+#header nav {
+    display: block;
+    float: right;
+    margin: 10px 0 0 0px;
+    padding: 20px 0px;
+    color: #C0BAB6;
+    /*background-color : #232323;*/
+}
+
+#header nav ul {
+    padding: 0px;
+}
+
+#header nav li {
+    display: inline;
+    margin-right: 25px;
+    padding-right: 60px;
+    text-transform: uppercase;
+}
+
+#header nav li.last {
+    margin-right: 0;
+}
+
+#header nav li a {
+    color: #FF9900;
+    /*background-color : #232323;*/
+}
+
+#header nav li a:hover {
+    color: #ed6200;
+    /*background-color : #232323;*/
+}
+
+
+/**
+ * ----------------------------------------------Content
+ * Area-------------------------------------
+ */
+
+#container {
+    padding: 30px 0;
+}
+
+#container section {
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+#container .last {
+    margin: 0;
+}
+
+#container .more {
+    text-align: right;
+}
+
+
+/* ------Slider----- */
+
+#container #slider {}
+
+
+/* ------Main Content----- */
+
+
+/*
+#homepage ##round_border{
+    border-radius: 50%;
+}
+*/
+
+#container #homepage {
+    display: block;
+    width: 100%;
+    line-height: 1.8em;
+}
+
+#container #homepage #services {}
+
+#container #homepage #services article {}
+
+#container #homepage #services article figure {}
+
+#container #homepage #services article figure img {
+    margin: 0 0 1px 0;
+    padding: 0px;
+    border: 1px solid lightgrey;
+    border-radius: 40px;
+}
+
+#container #homepage #services article figure figcaption {}
+
+#container #homepage #services article figure h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#container #homepage #services article figure footer {}
+
+#container #homepage #intro {}
+
+#container #homepage #intro article {}
+
+#container #homepage #intro article figure {}
+
+#container #homepage #intro article figure img {
+    float: right;
+    margin: 0 0 10px 0;
+    padding: 0px;
+    border: 1px solid lightgrey;
+    border-radius: 100px;
+}
+
+#container #homepage #intro article figure figcaption {
+    width: 460px;
+    float: left;
+}
+
+#container #homepage #intro article figure h2 {}
+
+#container #homepage #intro article figure footer {}
+
+
+
+/* ----------------------------------------------Footer------------------------------------- */
+
+#footer {
+    padding: 30px 0;
+    font-size: 12px;
+    line-height: 1.4em;
+}
+
+#footer section h2.title {
+    margin: 0 0 25px 0;
+    padding: 0;
+    color: #FFFFFF;
+    
+    /*    background-color: #333333;*/
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+#footer section nav li {
+    margin: 0 0 5px 0;
+    padding: 0 0 5px 0;
+    /*    border-bottom: 1px solid #555555;*/
+}
+
+#footer section nav li.last {
+    margin: 0;
+}
+
+
+/* ----------------------------------------------Copyright------------------------------------- */
+
+#copyright {
+    padding: 20px 0;
+}
+
+#copyright p {
+    margin: 0;
+    padding: 0;
+}
+
+.row4 #copyright .sml {
+    margin-right: 15px;
+}
